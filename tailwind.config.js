@@ -2,7 +2,11 @@
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    extend: {},
+    extend: {
+      padding: {
+        '5vw': '5vw',
+      }
+    },
   },
   plugins: [],
 };
