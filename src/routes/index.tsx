@@ -8,7 +8,7 @@ export default component$(() => {
         class="cursor-pointer p-6 text-center text-4xl font-bold text-blue-500"
         onClick$={() => alert("hi")}
       >
-        Hi 👋
+        Hi
       </h1>
       <p>
         Can't wait to see what you build with qwik!

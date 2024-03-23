@@ -7,7 +7,7 @@ import {
 
 export interface HeaderProps {}
 
-export const Header = component$<HeaderProps>((props) => {
+export const Header = component$<HeaderProps>(() => {
   const isMenuOpen = useSignal(false);
   return (
     <div class="relative">
@@ -20,6 +20,7 @@ export const Header = component$<HeaderProps>((props) => {
             <h1>Nathan Yik</h1>
           </Link>
           <button
+            data-testid="menu-button"
             class="rounded-full border-2 p-3"
             onClick$={() => (isMenuOpen.value = !isMenuOpen.value)}
           >
