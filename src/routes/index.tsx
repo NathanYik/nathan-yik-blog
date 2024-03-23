@@ -4,7 +4,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <h1 class="p-6">Hi 👋</h1>
+      <h1 class="p-6 cursor-pointer text-center text-4xl font-bold text-blue-500" onClick$={() => alert('hi')}>Hi 👋</h1>
       <p>
         Can't wait to see what you build with qwik!
         <br />
