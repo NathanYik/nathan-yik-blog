@@ -1,5 +1,6 @@
-import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { component$ } from "@builder.io/qwik"
+import TestingMarkdown from "~/components/testing-markdown/testing-markdown.mdx"
+import type { DocumentHead } from "@builder.io/qwik-city"
 
 export default component$(() => {
   return (
@@ -39,9 +40,10 @@ export default component$(() => {
         deserunt tempora. Magni dolor numquam praesentium laudantium eum,
         officiis, ullam ipsam eos impedit facere neque! Exercitationem.
       </p>
+      <TestingMarkdown content="SOMETHINGSDFSDF$#T#$" />
     </>
-  );
-});
+  )
+})
 
 export const head: DocumentHead = {
   title: "Welcome to Qwik",
@@ -51,4 +53,4 @@ export const head: DocumentHead = {
       content: "Qwik site description",
     },
   ],
-};
+}

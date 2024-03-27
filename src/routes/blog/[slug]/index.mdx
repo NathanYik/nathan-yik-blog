@@ -1,8 +1,10 @@
 import { component$ } from "@builder.io/qwik"
 import { Blog } from "../../../components/blog/blog"
+import TestingMarkDown from "../../../components/testing-markdown/testing-markdown.mdx"
 
-export const TestComponent = () => (
+export const TestComponent = (props) => (
   <div>
+    <b>{props.test}</b>
     <b>Hi there</b>
     <h1>FDSFSDFSDFJkjj</h1>
     <ul>
@@ -12,7 +14,7 @@ export const TestComponent = () => (
   </div>
 )
 
-<TestComponent />
+<TestComponent test="test%$%$#$%#" />
 <Blog />
 
 export const hi = "fjdaskfjasdkjfs"
@@ -25,5 +27,7 @@ Plz work?
 1. Hi there
 2. something
 
-- Item 1
+- **Item 1**
 - Item 2
+
+<TestingMarkDown props="TESTINGG" />
