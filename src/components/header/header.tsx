@@ -59,7 +59,6 @@ export const Header = component$<HeaderProps>(() => {
         >
           Resume
         </Link>
-        <div class="fixed -z-10 h-screen w-screen backdrop-blur-sm backdrop-brightness-50"></div>
       </div>
     </div>
   );
